@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakesh Bairwa || Home</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css"/>
+      <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon">
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <h3 style="float:left">Rakesh</h3><h3 style="float:right; color: #cc9933">Bairwa</h3>
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="https://linkedin.com/in/rakesh-bairwa" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Rakesh-Bairwa" class="social-icon"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:rakeshbairwa2329@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="contact.html" class="social-icon"><i class="fas fa-phone-alt"></i></a></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <header class="projects">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>my projects</h1>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+    </header>
+    <section class="section">
+      <div class="section-center projects-page-center">
+        <!-- single project -->
+        <article class="single-project">
+          <div class="project-container">
+            <img src="./project_img/gradient.png" alt="img"/>
+            <a href="https://index.html" class="project-icon">
+              <i class="fas fa-home"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h4>Gradient descent</h4>
+            <p>
+              For 1-feature gradient descent i used "data.csv" having just 1-features
+              whereas for n-features gradient descent project, i used this following 
+              dataset (from kaggle) : https://www.kaggle.com/mirichoi0218/insurance
+              It's a medical cost personal dataset where our objective is to forecast 
+              Insurance. Method used : multiple linear regression
+            </p>
+            <div class="project-footer">
+              <span>
+                <i class="fab fa-github"></i>
+              </span>
+              <a href="https://github.com/Rakesh-Bairwa/Machine-Learning/tree/main/Gradient%20descent">source code</a>
+            </div>
+          </div>
+        </article>
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="single-project">
+          <div class="project-container">
+            <img src="./project_img/movie.jpg" alt="img"/>
+            <a href="https://index.html" class="project-icon">
+              <i class="fas fa-home"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h4>Movie recommendation</h4>
+            <p>
+              This project is for learning purpose only.
+              This data is taken from very famous dataset mk-100k, 
+              that is publiclly available, here https://grouplens.org/datasets/movielens/100k/
+              I just took 2 CSV files from it that is "u.data" & "u.items"
+            </p>
+            <div class="project-footer">
+              <span>
+                <i class="fab fa-github"></i>
+              </span>
+              <a href="https://github.com/Rakesh-Bairwa/Machine-Learning/tree/main/Movie%20recommendation">source code</a>
+            </div>
+          </div>
+        </article>
+        <!-- end of single project -->
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li><a href="https://linkedin.com/in/rakesh-bairwa" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Rakesh-Bairwa" class="social-icon"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://rakeshbairwa2329@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="contact.html" class="social-icon"><i class="fas fa-phone-alt"></i></a></li>
+      </ul>
+
+      <p>&copy; <span id="date"></span> rakesh bairwa. all rights reserved</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
