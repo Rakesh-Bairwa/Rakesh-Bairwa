@@ -10,6 +10,11 @@
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=Rakesh-Bairwa&label=Profile%20Visits&color=blue&style=plastic%22%20alt=%22Rakesh-Bairwa"/> </p>
 
+
+* I am a final year postgraduate student under the department of Computer Applications in [NITT, Tamil Nadu](https://www.nitt.edu/).
+* I am a Fullstack Software Developer. I build a couple of WebApps with Python using Flask.
+* I love solving Data Structures & Algorithms problems for betterment of my Problem Solving Skills in C++.
+
 ***
 
 **🛠 &nbsp;Tech Stack**
