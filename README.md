@@ -11,9 +11,13 @@
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=Rakesh-Bairwa&label=Profile%20Visits&color=blue&style=plastic%22%20alt=%22Rakesh-Bairwa"/> </p>
 
 
-* I am a final year postgraduate student under the department of Computer Applications in [NITT, Tamil Nadu](https://www.nitt.edu/).
-* I am a Fullstack Software Developer. I build a couple of WebApps with Python using Flask.
-* I love solving Data Structures & Algorithms problems for betterment of my Problem Solving Skills in C++.
+* I did my masters in Computer Science from the Department of Computer Applications in [NITT, Tamil Nadu](https://www.nitt.edu/).
+* I did my bachelors in Statistics from Ramanujan College, University of Delhi (DU).
+* I have experience in cloud platforms & services like Amazon web services (AWS).
+* I also did research in the field of cloud, specifically cloud resource forecasting & VM placement and migration.
+* Build a Evolutionary algorithm for an Artificial Neural Network optimizer.
+* I know Fullstack Software Development. I build a couple of WebApps with Python using Flask and other technologies.
+* I like problem-solving, hence Data Structures & Algorithms as well.
 
 ***
 
@@ -48,13 +52,13 @@
   ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
 ***
 
--  🔭 I’m currently working on building a app that can Make Notes for students effortlessly while attending a meet/class or just looking a downloaded video/Image.
+-  🔭 I’m currently exploring AWS Certificate program in various domain
 
--  🌱 I’m currently learning Flask. I have engaged myself in projects that can solve real-world problems. You can find my work [here](https://github.com/Rakesh-Bairwa?tab=repositories).
+-  🌱 I’m currently focusing on Aws. I have engaged myself in AWS services that can solve on-premise problems. You can find me [here](https://www.linkedin.com/in/rakesh-bairwa/).
 
--  👯 I’m looking to collaborate on projects.
+-  👯 I’m looking to collaborate on projects and research.
 
--  💬 Ask me about C++, Python, Flask, Javascript, OOPS, DBMS , OS, Computer Networks, Data Structures & Algorithms.
+-  💬 Ask me about AWS, C++, Python, Flask, Javascript, OOPS, DBMS , OS, Computer Networks, Data Structures & Algorithms.
 
 -  😄 Pronouns: He/His
 
