@@ -1,0 +1,173 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome5} % Include fontawesome5 here
+\usepackage{enumitem}
+\usepackage{hyperref}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Rakesh Bairwa }}\\
+	\vspace{0.05cm} 
+	\raisebox{-0.2\height} {\Large \faPhoneSquare} \ \  (+91) 9818553979 \raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ \href{mailto://rakeshbairwa2329@gmail.com}{rakeshbairwa2329@gmail.com} \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ \href{https://github.com/Rakesh-Bairwa}{github.com/Rakesh-Bairwa} 
+     \\
+     \raisebox{-0.2\height}{\Large \faLinkedin} \ \ \href{https://www.linkedin.com/in/rakesh-bairwa/}{linkedin.com/in/rakesh-bairwa} \raisebox{-0.2\height}{\Large \faLocationArrow} \ \ \href{https://maps.app.goo.gl/ebDj7AehXm51BMK69}{New Delhi, India}
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+		
+	\item
+	      \headerrow
+	      {\textbf{Amazon Web Services (AWS)}}
+	      {\textbf{New Delhi, India}}
+	      \headerrow
+	      {\emph{Application Developer}}
+	      {\emph{August 2023 -- Present}}
+	      \begin{itemize*}
+            \item Developed NPCI-compliant UPI payment switch using Java 21 \& Spring Boot 3.5, architect \textbf{11} microservices processing \textbf{190+} NPCI message types. Implemented 3-layer caching system (Bloom Filter + Redis + PostgreSQL) with \textbf{<5ms} response time supporting over \textbf{1 Cr+} daily transactions with peak capacity of \textbf{500 TPS}. Built event-driven architecture with Kafka \& designed CI/CD pipeline using Jenkins deploying to EKS. Built IaC using Terraform for EKS, Aurora, MSK, Valkey, OpenSearch, ECR, S3, etc. Implemented observability stack with Jaeger, Prometheus, Grafana, \& Fluent Bit. Achieved sub-second latency through gRPC.
+            
+            %Worked on UPI payment platform (150+ banks), helped gain 2x TPS increase (250TPS to 500 TPS) with 70\% less resource usage via microservices architecture. Optimized banking connectivity through connection pooling (98\% reduction). Migrated 2TB financial data to domain-driven microservices with zero downtime and achieved 100\% data integrity. Improved transaction latency from 3s to <1s handling 250,000+ daily transactions, using Kafka + Camunda workflow engine. Deployed OpenSearch monitoring stack, achieved sub-second log search across 10+ TB data while maintaining 99.99\% SLA for financial transactions. \\ \textbf{Tech-Stack:} OpenJDK 17, Kafka, Amazon EKS, Istio, Karpenter, Jenkins, Amazon RDS PostgreSQL, Amazon OpenSearch, AWS Lambda, Amazon Managed Prometheus and Grafana.
+            
+            \item Developed a serverless ETL migration pipeline using AWS Step Functions, Glue, Lambda, \& S3 with schema validation, data transformation, \& automated error handling transferring \textbf{758M} records (\textbf{1.5TB+}) across 7 tables from Amazon QLDB to DynamoDB. Completed full migration within 3-hour, while maintaining data integrity \& zero data loss. Modernized 38+ Lambda modules by building a DynamoDBDriver abstraction layer with error handling, retry mechanisms, \& rollback strategies for seamless architecture transition.
+            
+            % Developed migration pipeline that handled 158M records (1500+ GB) across 7 tables from Amazon QLDB to Amazon DynamoDB which drove 300k SGD in revenue for stakeholders, completing the pipeline within a strict 3 hour downtime window. Ensured 100\% data integrity with zero loss or errors. Led extensive code modernization across 38+ Lambda modules, creating DynamoDBDriver abstraction layer and implementing sophisticated error handling, retry mechanisms, and rollback strategies to ensure seamless transition from QLDB to DynamoDB architecture\\ \textbf{Tech-Stack:} Amazon QLDB, Amazon DynamoDB, AWS Glue, AWS Step Function, AWS Lambda and S3.
+
+            \item Built a Real-World Data (RWD) insights platform that reduced ad-hoc analytics turnaround from days to minutes using NLP querying. Implemented multi-agent AI workflow to translate user prompts into SQL for Redshift. Developed React frontend \& FastAPI backend services on EKS, container builds via JFrog.
+	      \end{itemize*}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{National Institute of Technology, Trichy (NITT)}}
+	      {\textbf{Tamil Nadu, India}}
+	      \headerrow
+	      {\emph{Masters in Computer Science} (\textbf{GPA:} 8.18/10.00)}
+	      {\emph{August 2021 -- July 2023}}
+       
+	      \headerrow
+	      {\textbf{Delhi University (DU)}}
+	      {\textbf{New Delhi, India}}
+	      \headerrow
+	      {\emph{Bachelors in Statistics (Minor in Computer Science)} (\textbf{GPA:} 8.60/10.00)}
+	      {\emph{August 2018 -- July 2021}}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Projects}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+        \item
+	      \headerrow
+	      {\textbf{Code Reviewer Agent}}
+	      {\textbf{Oct 2025}}
+	       Built an autonomous AI code review agent using LangChain \& GitHub Actions that automatically analyzes pull requests for code quality, security vulnerabilities, \& best practices. Implemented RAG pipeline with codebase context retrieval, multi-step reasoning for complex logic analysis, \& structured feedback generation. Integrated with GitHub webhooks for real-time triggers, Redis for caching, \& PostgreSQL for tracking review history.
+
+       \item
+	      \headerrow
+	      {\textbf{Real-Time Notification Service}}
+	      {\textbf{Feb 2025}}
+	      Developed a scalable, event-driven notification service using Kafka, \& Redis, handling transaction alerts, OTP delivery, \& payment reminders across 4 channels (email, SMS, push, in-app). Implemented retry policies with DLQs, AWS SES/SNS integration, \& Prometheus/Grafana monitoring for delivery tracking \& SLA compliance.
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Technical Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Languages:}
+	      Java, C/C++, Python (Flask \& Django), Golang 
+    \item \textbf{Architecture:} 
+        Microservices, Hexagonal, CQRS, Event-Driven, REST APIs
+    \item \textbf{Databases:} 
+        RDS, DynamoDB, DocumentDB, QLDB, Redis (Valkey), postgreSQL \& MongoDB
+	\item \textbf{Software:}
+	   Docker, Kubernetes, Jenkins, Terraform, Kafka, OpenSearch,  Prometheus, Grafana \& Jaeger.
+       
+       % \item \textbf{Miscellaneous:} Linux/Unix, Mac, Git, Visual Studio
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Certifications}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+        \item {$\bullet$ AWS Certified Machine Learning - Specialty \href{https://cp.certmetrics.com/amazon/en/public/verify/credential/9a984eac2a42440993e76878f666cc12}{\faExternalLink* Verify}}{\ \ \ \ \ $\bullet$ AWS Certified AI Practitioner \ }\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/936166d4e3fb491382544f02b04a3e1f}{\faExternalLink* Verify}
+        
+        \item $\bullet$ AWS Certified Solutions Architect - Associate \href{https://cp.certmetrics.com/amazon/en/public/verify/credential/JBKPVEVDSEQE1NW3}{\faExternalLink* Verify}{\ \ $\bullet$ AWS Certified Cloud Practitioner \ \ \ \href{https://cp.certmetrics.com/amazon/en/public/verify/credential/FFNDYWN1WEV1QV5W}{\faExternalLink* Verify}
+ 
+        \item $\bullet$ AWS Certified Machine Learning Engineer - Associate \ }\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/6165cc7e01c448a6adaeaecfc25f86ac}{\faExternalLink* Verify}
+\end{itemize}
+
+% \hrule
+% \vspace{-1em}
+% \subsection*{\Large Extra-Curricular Activities}
+
+% \hyphenpenalty=1000
+% \begin{itemize}[leftmargin=1em,noitemsep]
+%         \item {$\bullet$ Received 1st prize from CheckX Innovac'22 at NITT} \ \ {$\bullet$ Contributed in 3 Academic Research papers at DU}
+% \end{itemize}
+
+\end{document}
